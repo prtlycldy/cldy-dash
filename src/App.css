@@ -1,0 +1,167 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.full-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 1em 2em;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    text-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    .header-content h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+.nav-tabs {
+    display: flex;
+    gap: 1rem;
+}
+
+    .nav-tabs a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+    }
+
+        .nav-tabs a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+.app-grid {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.app-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, filter 0.3s, color 0.3s;
+    width: 250px; /* Adjust width as necessary */
+}
+
+    .app-link:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 1em #000000aa);
+        color: var(--secondary-color); /* Change text color on hover */
+    }
+
+.app-logo {
+    height: 150px; /* Adjust height as necessary */
+    margin-bottom: 1em;
+    transition: filter 300ms;
+}
+
+    .app-logo:hover {
+        filter: drop-shadow(0 0 2em #ffff00aa);
+    }
+
+.scroll-button {
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+}
+
+    .scroll-button:hover {
+        background-color: #333;
+    }
+
+.scroll-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+    .scroll-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .scroll-section p {
+        font-size: 1.5rem;
+    }
+
+.footer {
+    padding: 1em;
+    background-color: #ffffff;
+    border-top: 2px solid #000000;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}

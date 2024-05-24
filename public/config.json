@@ -1,0 +1,46 @@
+{
+  "title": "cldy.world",
+  "icon": "favicon.ico",
+  "apps": [
+    {
+      "name": "Request",
+      "url": "https://request.cldy.world",
+      "logo": "logos/request.png"
+    },
+    {
+      "name": "Alexandria",
+      "url": "https://alexandria.cldy.world",
+      "logo": "logos/alexandria.png"
+    },
+    {
+      "name": "TV",
+      "url": "https://tv.cldy.world",
+      "logo": "logos/tv.png"
+    },
+    {
+      "name": "Drop",
+      "url": "https://drop.cldy.world",
+      "logo": "logos/drop.png"
+    },
+    {
+      "name": "CommaFeed",
+      "url": "https://feed.cldy.world",
+      "logo": "logos/commafeed.png"
+    },
+    {
+      "name": "Pi-hole",
+      "url": "https://pihole.cldy.world",
+      "logo": "logos/pihole.png"
+    },
+    {
+      "name": "qBit",
+      "url": "https://qbit.cldy.world",
+      "logo": "logos/qbit.png"
+    }
+  ],
+  "theme": {
+    "background": "#131313",
+    "primaryColor": "#e28743",
+    "secondaryColor": "#d27713"
+  }
+}

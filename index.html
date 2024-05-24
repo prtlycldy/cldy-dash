@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script>
+        // Fetch the config.json file
+        fetch('/config.json')
+            .then(response => response.json())
+            .then(config => {
+                // Set the title from the config
+                document.title = config.title || 'Default Title';
+
+                // Set the favicon from the config or use a default one
+                const link = document.createElement('link');
+                link.rel = 'icon';
+                link.type = 'image/png';
+                link.href = config.icon || '/default-icon.png'; // Ensure you have a default-icon.png in your public directory
+                document.head.appendChild(link);
+            })
+            .catch(error => console.error('Error fetching the config:', error));
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
